@@ -1,0 +1,61 @@
+<script>
+const answer = [3, 1, 4, 6];
+const value = '3214';
+let strike = 0;
+let ball = 0;
+answer.forEach((Element, i) => {   // 요소, 인덱스 이름짓는건 자유. 순서가 중요!
+  const index = value.indexOf(element);
+  if (index > -1) {                //일치하는 숫자 발견
+    if (index === i) {             //자릿수도 같음
+      strike += 1;
+    } else {                       //숫자만 같음
+      ball += 1;
+    }
+  }
+})
+
+
+
+const array = [1,2,3,4,];
+const result = [];
+for (let i = 0; i < 4; i++) {
+    result.push(array[i] * 2);
+}
+
+result
+(4) [2, 4, 6, 8]
+
+
+array.map((element, i) => {
+    return element * 2;
+})
+(4) [2, 4, 6, 8]
+array.map((element, i) => {
+    return element + 1;
+})
+
+(4) [2, 3, 4, 5]
+
+
+Array(45).fill().map((el,id) => {
+    return id + 1;
+})
+(45) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+11, 12, 13, 14, 15, 16, 17, 18, 19, 
+20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
+ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+  40, 41, 42, 43, 44, 45]
+
+  
+Array(45).fill().map((el,id) => {
+    return id + 2;
+})
+(45) [2, 3, 4, 5, 6, 7, 8, 9, 10, 
+11, 12, 13, 14, 15, 16, 17, 18, 19, 
+20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
+ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 
+ 40, 41, 42, 43, 44, 45, 46]
+
+
+
+</script>
